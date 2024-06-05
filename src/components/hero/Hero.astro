@@ -1,6 +1,7 @@
 ---
 import './hero.css';
 import Boton from '../atoms/Boton.astro';
+import SocialIcons from '../SocialIcons.astro';
 ---
 
 <section class="hero">
@@ -11,16 +12,20 @@ import Boton from '../atoms/Boton.astro';
 				Desarrollador de Frontend y Estudiante de Tecnologías de la
 				Información en los Negocios.
 			</p>
-			<Boton
-				href="/docs/Resume.pdf"
-				texto="Descargar CV"
+			<div class="md:flex justify-between items-center ">
+				<Boton
+				href="mailto:rafa.bediaz@gmail.com"
+				texto="Contactar"
 				target="_blank"
-			/>
+				/>
+			<SocialIcons width="30" height="30" />
+			</div>
+			
 		</div>
 		<img
 			class="hero__img"
 			src="#"
-			alt="Jhon Doe"
+			alt="Rafael Benítez Díaz"
 			width="384"
 			height="384"
 		/>
