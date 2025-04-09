@@ -2,9 +2,9 @@
 const { name } = Astro.props;
 ---
 
-<div>
-  <div>
+<div class="flex flex-col items-center justify-center">
+  <div class="inline-flex flex-col items-center justify-center p-3 border rounded bg-zinc-800 border-zinc-600">
     <slot></slot>
   </div>
-  <span>{name}</span>
+  <span class="text-zinc-400 text-sm mt-1 font-sans">{name}</span>
 </div>

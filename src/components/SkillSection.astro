@@ -1,17 +1,54 @@
 ---
 import IconContainer from "./IconContainer.astro";
-import JavaScript from "../assets/JavaScript.astro";
+// Import icon components for frontend skills
+import JavaScript from "../assets/icons/frontend/JavaScript.astro";
+import React from "../assets/icons/frontend/React.astro";
+import Tailwind from "../assets/icons/frontend/Tailwind.astro";
+import Css from "../assets/icons/frontend/Css.astro";
+import AstroIcon from "../assets/icons/frontend/AstroIcon.astro";
+import Html from "../assets/icons/frontend/Html.astro";
+// Import icon components for backend skills
+import Node from "../assets/icons/backend/Node.astro";
+import Sql from "../assets/icons/backend/Sql.astro";
+import Python from "../assets/icons/backend/Python.astro";
 ---
 
-<section>
+<section class="my-20">
   <h2 class="text-2xl font-semibold mb-1">Habilidades</h2>
-  <hr class="mb-6 border-1 border-zinc-600" />
-
-  <h3 class="text-xl font-medium">Frontend</h3>
-  <div class="flex">
-    <IconContainer name="JavaScript">
-      <JavaScript />
+  <hr class="mb-6 border-zinc-600" />
+  <h3 class="text-xl font-medium mb-4">Frontend</h3>
+  <div class="flex flex-wrap gap-5">
+    <IconContainer name="React">
+      <React size="size-9"/>
     </IconContainer>
-
+    <IconContainer name="JavaScript">
+      <JavaScript size="size-9"/>
+    </IconContainer>
+    <IconContainer name="Tailwind">
+      <Tailwind size="size-9"/>
+    </IconContainer>
+    <IconContainer name="CSS">
+      <Css size="size-9"/>
+    </IconContainer>
+    <IconContainer name="Astro">
+      <AstroIcon size="size-9"/>
+    </IconContainer>
+    <IconContainer name="HTML">
+      <Html size="size-9"/>
+    </IconContainer>
+    
+  </div>
+  
+  <h3 class="text-xl font-medium mt-6 mb-4">Backend</h3>
+  <div class="flex flex-wrap gap-5">
+    <IconContainer name="Node">
+      <Node size="size-9"/>
+    </IconContainer>
+    <IconContainer name="SQL">
+      <Sql size="size-9"/>
+    </IconContainer>
+    <IconContainer name="Python">
+      <Python size="size-9"/>
+    </IconContainer>
   </div>
 </section>
