@@ -1,0 +1,18 @@
+---
+import GithubIcon from "../assets/Github.astro";
+import EmailIcon from "../assets/Email.astro";
+import Hover from "./Hover.astro";
+---
+
+<nav class="w-full flex justify-between items-center">
+  <span class="text-xl">RafaBD</span>
+  <div class="flex gap-4">
+    <Hover link="mailto:rafa.bediaz@gmail.com">
+      <EmailIcon />
+    </Hover>
+    <Hover link="https://github.com/rafBD">
+      <GithubIcon />
+    </Hover>
+
+  </div>
+</nav>

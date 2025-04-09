@@ -1,0 +1,20 @@
+---
+import NavBar from '../components/NavBar.astro';
+import Layout from '../layouts/Layout.astro';
+import ProfileSection from '../components/ProfileSection.astro';
+import AboutSection from '../components/AboutSection.astro';
+import SkillSection from '../components/SkillSection.astro';
+---
+
+<Layout title="Rafael Benítez Díaz">
+	<div class="min-w-[530px] max-w-screen-sm py-16 px-8 mx-auto">
+		<header>
+			<NavBar />
+			<ProfileSection />
+		</header>
+		<main>
+			<AboutSection />
+			<SkillSection />
+		</main>
+	</div>
+</Layout>
