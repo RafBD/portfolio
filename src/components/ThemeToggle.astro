@@ -1,0 +1,37 @@
+---
+import SunIcon from '../assets/sun.svg';
+import MoonIcon from '../assets/moon.svg';
+---
+
+<div class='flex items-center justify-center'>
+  <button
+    id='theme-toggle-btn'
+    class='cursor-pointer hover:scale-125 hover:bg-primary-light hover:text-village p-1 rounded-md font-bold text-sm transition-transform duration-300'
+  >
+    <span><SunIcon class='size-5' id='SunIcon' /></span>
+    <span><MoonIcon class='size-5 hidden' id='MoonIcon' /></span>
+  </button>
+</div>
+
+<script is:inline>
+  const toggleBtn = document.getElementById('theme-toggle-btn');
+  const SunIcon = document.getElementById('SunIcon');
+  const MoonIcon = document.getElementById('MoonIcon');
+
+  toggleBtn.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark');
+
+    if (isDark) {
+      SunIcon.classList.add('hidden');
+      console.log('oscuro');
+
+      MoonIcon.classList.remove('hidden');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      SunIcon.classList.remove('hidden');
+      console.log('claro');
+      MoonIcon.classList.add('hidden');
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+</script>

@@ -1,0 +1,41 @@
+---
+import ContactIcon from '../assets/mail.svg';
+import ProjectIcon from '../assets/briefcase.svg';
+import BlogIcon from '../assets/article.svg';
+import ThemeToggle from './ThemeToggle.astro';
+---
+
+<nav
+  class='sticky top-0 left-0 right-0 z-50 transition-all bg-transparent duration-300 border-b border-gray-light flex items-center justify-between p-4 backdrop-blur-xl'
+>
+  <a href='/' class='font-bold text-lg hover:scale-110 transition-transform'
+    >Rafa_BD</a
+  >
+  <ul class='flex items-center justify-between gap-4'>
+    <li
+      class='hover:bg-primary-light hover:text-village p-1 rounded-md font-bold text-sm transition-colors'
+    >
+      <a href='#projects' class='flex items-center justify-center gap-1'>
+        <ProjectIcon class='size-5 inline' />
+        <span>Proyectos </span>
+      </a>
+    </li>
+    <li
+      class='hover:bg-primary-light hover:text-village p-1 rounded-md font-bold text-sm transition-colors'
+    >
+      <a href='#contact' class='flex items-center justify-center gap-1'>
+        <ContactIcon class='size-5 inline' />
+        <span>Contacto </span>
+      </a>
+    </li>
+    <li
+      class='hover:bg-primary-light hover:text-village p-1 rounded-md font-bold text-sm transition-colors'
+    >
+      <a href='#blog' class='flex items-center justify-center gap-1'>
+        <BlogIcon class='size-5 inline' />
+        <span>Blog </span>
+      </a>
+    </li>
+    <ThemeToggle />
+  </ul>
+</nav>

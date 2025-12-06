@@ -1,0 +1,69 @@
+---
+import Navbar from '../components/Navbar.astro';
+import '../styles/global.css';
+
+const title = 'Rafa_BD | Desarrollo de Software y Programación';
+const description = 'Desarrollador de software y programación web.';
+---
+
+<!doctype html>
+<html lang='es'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>{title}</title>
+    <meta name='viewport' content='width=device-width' />
+    <meta name='description' content={description} />
+    <meta
+      name='keywords'
+      content='Rafael Benítez Díaz, desarrollador, software, programación, web, moderno, escalable'
+    />
+    <meta name='author' content='Rafael Benítez Díaz' />
+    <meta property='og:description' content={description} />
+    <meta property='og:image' content='/cropped-favicon-192x192.png' />
+    <meta name='robots' content='index, follow' />
+    <meta name='googlebot' content='index, follow' />
+    <meta name='bingbot' content='index, follow' />
+    <meta name='yandexbot' content='index, follow' />
+
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='16x16'
+      href='/cropped-favicon-16x16.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='32x32'
+      href='/cropped-favicon-32x32.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='192x192'
+      href='/cropped-favicon-192x192.png'
+    />
+    <link rel='apple-touch-icon' href='/cropped-favicon-180x180.png' />
+    <meta
+      name='msapplication-TileImage'
+      content='/cropped-favicon-270x270.png'
+    />
+  </head>
+  <body
+    class='container dark:bg-dark-background dark:text-village min-h-screen animate-fade-in animation-duration-1000 transition-colors'
+  >
+    <Navbar />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  html,
+  body {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+</style>
