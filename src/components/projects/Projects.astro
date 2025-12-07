@@ -19,7 +19,7 @@ import GithubIcon from '../../assets/github.svg';
     <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
       {
         PROJECTS.map((project, index) => (
-          <div class='overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-light rounded-xl group'>
+          <div class='overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-light dark:border-dark-gray rounded-xl group'>
             {/* IMG */}
             <div>
               <img
@@ -40,7 +40,7 @@ import GithubIcon from '../../assets/github.svg';
             {/* TAGS */}
             <div class='flex flex-wrap gap-2 px-6'>
               {project.tags.map((tag) => (
-                <span class='px-3 py-1 bg-secondary text-xs rounded-md font-medium border border-gray-light text-black dark:text-village'>
+                <span class='px-3 py-1 bg-secondary text-xs rounded-md font-medium border border-gray-light text-black dark:bg-dark-gray dark:border-dark-gray dark:text-village'>
                   {tag}
                 </span>
               ))}
