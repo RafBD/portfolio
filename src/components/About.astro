@@ -1,0 +1,64 @@
+---
+import AstroIcon from '../assets/techIcons/astro.svg';
+import Auth0Icon from '../assets/techIcons/auth0.svg';
+import BootstrapIcon from '../assets/techIcons/bootstrap.svg';
+import CssIcon from '../assets/techIcons/css.svg';
+import FirebaseIcon from '../assets/techIcons/firebase.svg';
+import GitIcon from '../assets/techIcons/git.svg';
+import HtmlIcon from '../assets/techIcons/html5.svg';
+import JavaScriptIcon from '../assets/techIcons/javascript.svg';
+import ReactIcon from '../assets/techIcons/react.svg';
+import TailwindIcon from '../assets/techIcons/tailwindcss.svg';
+import ViteIcon from '../assets/techIcons/vitejs.svg';
+
+const techStack = [
+  { name: 'Astro', icon: AstroIcon },
+  { name: 'Auth0', icon: Auth0Icon },
+  { name: 'Bootstrap', icon: BootstrapIcon },
+  { name: 'CSS3', icon: CssIcon },
+  { name: 'Firebase', icon: FirebaseIcon },
+  { name: 'Git', icon: GitIcon },
+  { name: 'HTML5', icon: HtmlIcon },
+  { name: 'JavaScript', icon: JavaScriptIcon },
+  { name: 'React', icon: ReactIcon },
+  { name: 'Tailwind CSS', icon: TailwindIcon },
+  { name: 'Vite', icon: ViteIcon },
+];
+---
+
+<section class='flex flex-col items-center'>
+  <!-- About me text -->
+  <div class='text-center max-w-4xl mb-10'>
+    <h2 class='font-bold text-5xl'>Sobre mí</h2>
+    <p class='text-xl text-dark-gray dark:text-village leading-relaxed mt-4'>
+      Soy un desarrollador Full Stack apasionado por crear experiencias web
+      excepcionales. Me especializo en construir aplicaciones escalables y
+      mantenibles, siempre buscando las mejores prácticas y tecnologías
+      modernas.
+    </p>
+  </div>
+
+  <!-- Tech stack -->
+  <div class='container'>
+    <h3 class='text-2xl font-bold mb-6 text-center'>Tecnologías que uso</h3>
+    <div class='overflow-hidden'>
+      <ul class='flex whitespace-nowrap animate-scroll-infinite w-max'>
+        {
+          [...techStack, ...techStack].map(({ name, icon: Icon }) => (
+            <li class='inline-flex flex-col items-center mx-20'>
+              <Icon class='size-20 mb-2 dark:text-white text-black' />
+              <span class='text-sm text-dark-gray font-bold dark:text-village'>
+                {name}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+
+  <!-- Skills cards -->
+  <div></div>
+</section>
+
+<style></style>
