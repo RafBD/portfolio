@@ -1,0 +1,53 @@
+---
+import GithubIcon from '../assets/github.svg';
+import LinkedinIcon from '../assets/linkedin.svg';
+import MailIcon from '../assets/mail.svg';
+---
+
+<footer class='border-t border-gray-light dark:border-gray-300 mt-20'>
+  <div class='container m-auto px-4 md:px-8 py-12'>
+    <div class='space-y-8'>
+      <div class='flex flex-col md:flex-row justify-center items-center gap-6'>
+        <div class='text-center md:text-left'>
+          <h3 class='font-bold text-lg mb-2 dark:text-white'>
+            Rafael Benítez Díaz
+          </h3>
+          <p class='text-sm max-w-md text-dark-gray dark:text-white'>
+            Desarrollador Web | Creador de experiencias web modernas
+          </p>
+        </div>
+
+        <!-- Redes Sociales -->
+        <div>
+          <ul class='flex gap-2'>
+            <li
+              class='hover:bg-primary hover:text-white dark:text-white p-1.5 rounded-md transition'
+            >
+              <a href='' target='_blank'><GithubIcon /></a>
+            </li>
+            <li
+              class='hover:bg-primary hover:text-white dark:text-white p-1.5 rounded-md transition'
+            >
+              <a href='' target='_blank'><LinkedinIcon /></a>
+            </li>
+            <li
+              class='hover:bg-primary hover:text-white dark:text-white p-1.5 rounded-md transition'
+            >
+              <a href='' target='_blank' rel='no'><MailIcon /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class='text-center'>
+        <small class='opacity-90 text-dark-gray dark:text-white/90'
+          >© {new Date().getFullYear()} RafaBD. | <a
+            class='hover:underline'
+            href='mailto:rafael.benitez.di@usb.edu.mx'
+            >rafael.benitez.di@usb.edu.mx</a
+          >
+        </small>
+      </div>
+    </div>
+  </div>
+</footer>
