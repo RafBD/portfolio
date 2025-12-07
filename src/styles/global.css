@@ -13,4 +13,15 @@
 
   --color-background: #fbfcfd;
   --color-dark-background: #121212;
+
+  --animate-scroll-infinite: scroll-infinite 15s linear infinite;
+
+  @keyframes scroll-infinite {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
