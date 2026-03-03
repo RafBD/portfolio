@@ -27,14 +27,16 @@ const techStack = [
 ];
 ---
 
-<section class='flex flex-col mb-40'>
+<section class='flex flex-col mb-40 px-4 md:px-0 mt-20'>
   <!-- About me text -->
   <div
-    class='flex gap-7 border border-gray-light dark:border-dark-gray drop-shadow-xl p-10 rounded-xl mb-20'
+    class='flex flex-col md:flex-row gap-7 border border-gray-light dark:border-dark-gray drop-shadow-xl p-6 md:p-10 rounded-xl mb-20'
   >
-    <div class='text-center max-w-3xl mb-10'>
-      <h2 class='font-bold text-5xl'>Sobre mí</h2>
-      <p class='text-xl text-dark-gray dark:text-village leading-relaxed mt-4'>
+    <div class='text-center md:text-start max-w-3xl mb-10'>
+      <h2 class='font-bold text-3xl md:text-5xl'>Sobre mí</h2>
+      <p
+        class='text-base md:text-xl text-dark-gray dark:text-village leading-relaxed mt-4'
+      >
         Soy un desarrollador Full Stack apasionado por crear experiencias web
         excepcionales. Me especializo en construir aplicaciones escalables y
         mantenibles, siempre buscando las mejores prácticas y tecnologías
@@ -43,11 +45,11 @@ const techStack = [
     </div>
 
     <div
-      class='border border-gray-light dark:border-dark-gray drop-shadow-2xl rounded-xl flex flex-col justify-center overflow-hidden'
+      class='border border-gray-light dark:border-dark-gray drop-shadow-2xl rounded-xl flex flex-col justify-center overflow-hidden w-full max-w-xl mx-auto md:mx-0'
     >
       <div class='flex items-center justify-center gap-4 p-6'>
         <School class='text-primary size-20' />
-        <h2 class='text-2xl text-dark-gray dark:text-village'>
+        <h2 class='text-xl md:text-2xl text-dark-gray dark:text-village'>
           <span class='font-bold'>Licenciatura</span> en Tecnologías de la Información
           en los Negocios
         </h2>
@@ -56,7 +58,7 @@ const techStack = [
       <div
         class='bg-linear-to-b from-primary/10 to-transparent flex-1 flex flex-col justify-center p-6'
       >
-        <h4 class='text-xl font-medium dark:text-village'>
+        <h4 class='text-lg md:text-xl font-medium dark:text-village'>
           Universidad Simón Bolívar
         </h4>
         <p class='text-xl text-dark-gray dark:text-village'>2019 - 2024</p>
@@ -68,10 +70,12 @@ const techStack = [
   <div class='container'>
     <h3 class='text-2xl font-bold mb-10 text-center'>Tecnologías que uso</h3>
     <div class='overflow-hidden'>
-      <ul class='flex whitespace-nowrap animate-scroll-infinite w-max'>
+      <ul
+        class='flex flex-wrap justify-center gap-8 whitespace-nowrap animate-scroll-infinite w-max'
+      >
         {
           [...techStack, ...techStack].map(({ name, icon: Icon }) => (
-            <li class='inline-flex flex-col items-center mx-20'>
+            <li class='inline-flex flex-col items-center mx-8 md:mx-20'>
               <Icon class='size-20 mb-2 dark:text-white text-black' />
               <span class='text-sm text-dark-gray font-bold dark:text-village'>
                 {name}
