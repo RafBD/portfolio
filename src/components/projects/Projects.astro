@@ -8,8 +8,10 @@ import GithubIcon from '../../assets/github.svg';
   <div class='max-w-6xl mx-auto space-y-12'>
     <!-- Proyectos destacados -->
     <div class='text-center space-y-8'>
-      <h2 class='font-bold text-5xl'>Proyectos Destacados</h2>
-      <p class='text-xl text-dark-gray dark:text-village leading-relaxed'>
+      <h2 class='font-bold text-3xl md:text-5xl'>Proyectos Destacados</h2>
+      <p
+        class='text-base md:text-xl text-dark-gray dark:text-village leading-relaxed'
+      >
         Una selección de proyectos en los que he trabajado, desde aplicaciones
         web completas hasta herramientas útiles para desarrolladores.
       </p>
@@ -19,37 +21,36 @@ import GithubIcon from '../../assets/github.svg';
     <div class='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
       {
         PROJECTS.map((project, index) => (
-          <div class='overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-light dark:border-dark-gray rounded-xl group'>
+          <div class='overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-light dark:border-dark-gray rounded-xl group w-full max-w-lg mx-auto'>
             {/* IMG */}
-            <div>
+            <div class='h-48 sm:h-56 md:h-64 overflow-hidden'>
               <img
                 class='object-cover w-full h-full group-hover:scale-105 transition-transform'
                 src={project.image}
                 alt='Imagen del proyecto'
               />
             </div>
-            {/* TITLE & DESCRIPTION */}
-            <div class='p-6 space-y-4'>
-              <h4 class='text-xl font-bold group-hover:text-primary transition-colors'>
+            <div class='p-4 sm:p-6 space-y-3'>
+              <h4 class='text-lg md:text-xl font-bold group-hover:text-primary transition-colors'>
                 {project.title}
               </h4>
-              <p class='text-sm text-dark-gray dark:text-village leading-relaxed'>
+              <p class='text-sm md:text-base text-dark-gray dark:text-village leading-relaxed'>
                 {project.description}
               </p>
             </div>
             {/* TAGS */}
-            <div class='flex flex-wrap gap-2 px-6'>
+            <div class='flex flex-wrap gap-2 px-4 sm:px-6'>
               {project.tags.map((tag) => (
-                <span class='px-3 py-1 bg-secondary text-xs rounded-md font-medium border border-gray-light text-black dark:bg-dark-gray dark:border-dark-gray dark:text-village'>
+                <span class='px-2 py-1 bg-secondary text-[0.6rem] sm:text-xs rounded-md font-medium border border-gray-light text-black dark:bg-dark-gray dark:border-dark-gray dark:text-village'>
                   {tag}
                 </span>
               ))}
             </div>
             {/* LINKS  */}
-            <div class='flex items-center gap-4 mt-4 px-6 pb-4'>
+            <div class='flex flex-wrap items-center gap-2 sm:gap-4 mt-4 px-4 sm:px-6 pb-4'>
               <a
                 href={project.linkCode}
-                class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium px-6 h-10 border bg-primary hover:bg-primary/90 text-village rounded-md transition-colors'
+                class='inline-flex items-center justify-center gap-2 whitespace-nowrap text-xs sm:text-sm font-medium px-4 sm:px-6 h-8 sm:h-10 border bg-primary hover:bg-primary/90 text-village rounded-md transition-colors'
               >
                 Code
                 <span>
@@ -58,7 +59,7 @@ import GithubIcon from '../../assets/github.svg';
               </a>
               <a
                 href={project.linkPreview}
-                class='inline-flex items-center justify-center gap-2 text-sm font-medium px-6 h-10 border bg-primary hover:bg-primary/90 text-village rounded-md transition-colors'
+                class='inline-flex items-center justify-center gap-2 text-xs sm:text-sm font-medium px-4 sm:px-6 h-8 sm:h-10 border bg-primary hover:bg-primary/90 text-village rounded-md transition-colors'
               >
                 Preview
                 <span>
@@ -72,17 +73,3 @@ import GithubIcon from '../../assets/github.svg';
     </div>
   </div>
 </section>
-
-<!-- 
-
-      <div
-        class='overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-gray-light rounded-xl group'
-      >
-      {
-        PROJECTS.map((project, index) => (
-
-        ))
-      }
-        
-      </div>
--->
