@@ -5,16 +5,20 @@ import GithubIcon from '../assets/github.svg';
 import LinkedinIcon from '../assets/linkedin.svg';
 ---
 
-<section class='flex items-center justify-center min-h-screen mb-14'>
-  <div class='space-y-8'>
+<section
+  class='flex flex-col md:flex-row items-center justify-center min-h-screen gap-12'
+>
+  <div class='text-center md:text-start space-y-8'>
     <div class='space-y-4'>
-      <h1 class='font-bold text-7xl'>
+      <h1 class='font-bold text-4xl md:text-7xl'>
         Hola, soy <span
           class='text-primary drop-shadow-xl/75 drop-shadow-primary'
           >Rafael</span
         >
       </h1>
-      <p class='text-3xl text-dark-gray dark:text-village font-semibold'>
+      <p
+        class='text-2xl md:text-3xl text-dark-gray dark:text-village font-semibold'
+      >
         Desarrollador Web
       </p>
     </div>
@@ -38,7 +42,7 @@ import LinkedinIcon from '../assets/linkedin.svg';
         <span><ContactIcon class='size-5 inline' /></span>
       </a>
     </div>
-    <div class='flex items-center gap-6'>
+    <div class='flex items-center justify-around md:justify-start gap-6'>
       <a
         href='https://github.com/rafbd'
         target='_blank'
@@ -65,7 +69,7 @@ import LinkedinIcon from '../assets/linkedin.svg';
     <img
       src='./avatar-pixel-recortado.png'
       alt='Avatar de Rafael Benitez en pixel art'
-      class='drop-shadow-2xl drop-shadow-primary'
+      class='w-80 md:w-full drop-shadow-2xl drop-shadow-primary'
     />
   </div>
 </section>
