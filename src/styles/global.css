@@ -26,3 +26,7 @@
     }
   }
 }
+
+html {
+  scroll-padding-top: 5rem;
+}
