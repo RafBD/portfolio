@@ -1,4 +1,5 @@
 ---
+import School from '../assets/school.svg';
 import AstroIcon from '../assets/techIcons/astro.svg';
 import Auth0Icon from '../assets/techIcons/auth0.svg';
 import BootstrapIcon from '../assets/techIcons/bootstrap.svg';
@@ -26,16 +27,41 @@ const techStack = [
 ];
 ---
 
-<section class='flex flex-col items-center mb-40'>
+<section class='flex flex-col mb-40'>
   <!-- About me text -->
-  <div class='text-center max-w-4xl mb-10'>
-    <h2 class='font-bold text-5xl'>Sobre mí</h2>
-    <p class='text-xl text-dark-gray dark:text-village leading-relaxed mt-4'>
-      Soy un desarrollador Full Stack apasionado por crear experiencias web
-      excepcionales. Me especializo en construir aplicaciones escalables y
-      mantenibles, siempre buscando las mejores prácticas y tecnologías
-      modernas.
-    </p>
+  <div
+    class='flex gap-7 border border-gray-light dark:border-dark-gray drop-shadow-xl p-10 rounded-xl mb-20'
+  >
+    <div class='text-center max-w-3xl mb-10'>
+      <h2 class='font-bold text-5xl'>Sobre mí</h2>
+      <p class='text-xl text-dark-gray dark:text-village leading-relaxed mt-4'>
+        Soy un desarrollador Full Stack apasionado por crear experiencias web
+        excepcionales. Me especializo en construir aplicaciones escalables y
+        mantenibles, siempre buscando las mejores prácticas y tecnologías
+        modernas.
+      </p>
+    </div>
+
+    <div
+      class='border border-gray-light dark:border-dark-gray drop-shadow-2xl rounded-xl flex flex-col justify-center overflow-hidden'
+    >
+      <div class='flex items-center justify-center gap-4 p-6'>
+        <School class='text-primary size-20' />
+        <h2 class='text-2xl text-dark-gray dark:text-village'>
+          <span class='font-bold'>Licenciatura</span> en Tecnologías de la Información
+          en los Negocios
+        </h2>
+      </div>
+
+      <div
+        class='bg-linear-to-b from-primary/10 to-transparent flex-1 flex flex-col justify-center p-6'
+      >
+        <h4 class='text-xl font-medium dark:text-village'>
+          Universidad Simón Bolívar
+        </h4>
+        <p class='text-xl text-dark-gray dark:text-village'>2019 - 2024</p>
+      </div>
+    </div>
   </div>
 
   <!-- Tech stack -->
