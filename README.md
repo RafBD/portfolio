@@ -2,11 +2,6 @@
 
 <div align="center">
 
-![Astro Badge](https://img.shields.io/badge/Astro-FF5D01?style=for-the-badge&logo=astro&logoColor=white)
-![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![License Badge](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
 **Un portfolio moderno y minimalista construido con Astro y Tailwind CSS**
 
 [🌐 Ver Demo](https://rafaelbd.netlify.app/)
