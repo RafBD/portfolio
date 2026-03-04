@@ -1,18 +1,11 @@
-# Portfolio - Rafa B
-
-<div align="center">
-
-**Un portfolio moderno y minimalista construido con Astro y Tailwind CSS**
-
-[🌐 Ver Demo](https://rafaelbd.netlify.app/)
-
-</div>
+# Portfolio - Rafa BD
 
 ---
 
 ## 📸 Vista Previa
 
 ![Portfolio Preview](public/Captura-de-pantalla.png)
+[🌐 Ver Demo](https://rafaelbd.netlify.app/)
 
 ---
 
